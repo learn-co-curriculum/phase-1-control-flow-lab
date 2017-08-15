@@ -1,58 +1,42 @@
 const expect = chai.expect;
 
 describe('index.js', () => {
-  describe('currentUser', () => {
-    it('is defined', () => {
-      expect(currentUser, "The 'currentUser' variable must contain a string").to.be.a('string');
-      expect(currentUser, "You need to modify the value of the 'currentUser' variable").to.not.be.empty;
-    });
-  });
+  describe('first 400 feet are free', () => {
+    it('gives customers a free sample', () => {
+      expect(scuberGreetingForFeet(199)).to.equal("This one is on me!");
+    })
 
-  describe('welcomeMessage', () => {
-    it('contains "Welcome to Flatbook, "', () => {
-      expect(welcomeMessage).to.have.string('Welcome to Flatbook, ');
-    });
+    it('charges 25 dollars for a distance over 2000 feet', () => {
+      expect(scuberGreetingForFeet(2001)).to.equal("I will gladly take your thirty bucks.")
+    })
 
-    it("contains the value of the 'currentUser' variable", () => {
-      expect(welcomeMessage).to.have.string(currentUser);
-    });
+    it('does not allow rides over 2500 feet', () => {
+      expect(scuberGreetingForFeet(2501)).to.equal("No can do.")
+    })
 
-    it('ends with an exclamation point!', () => {
-      expect(welcomeMessage.substr(-1)).to.eq('!');
-    });
-  });
+  })
 
-  describe('excitedWelcomeMessage', () => {
-    it('contains "WELCOME TO FLATBOOK, "', () => {
-      expect(excitedWelcomeMessage).to.have.string('WELCOME TO FLATBOOK, ');
-    });
+  describe('allowable destination', () => {
+    it('returns "Ok, sounds good." when the city is NYC', () => {
+      expect(ternaryCheckCity("NYC")).to.equal("Ok, sounds good.")
+    })
 
-    it("contains the value of the 'currentUser' variable", () => {
-      const upperCaseCurrentUser = currentUser.toUpperCase();
+    it('should return "No go." if the destination city is not NYC', () => {
+      expect(ternaryCheckCity("Pittsburgh")).to.equal("No go.")
+    })
+  })
 
-      expect(excitedWelcomeMessage).to.have.string(upperCaseCurrentUser);
-    });
+  describe('switchAge', () => {
+    it('should return "Thank you so much." if the tip is generous', () => {
+      expect(switchOnCharmFromTip('generous')).to.equal('Thank you so much.')
+    })
 
-    it('ends with an exclamation point', () => {
-      expect(excitedWelcomeMessage.substr(-1)).to.eq('!');
-    });
-  });
+    it('should return "Thank you." if the tip is not so generous', () => {
+      expect(switchOnCharmFromTip('not as generous')).to.equal('Thank you.')
+    })
 
-  describe('shortGreeting', () => {
-    it(`contains "Welcome, "`, () => {
-      expect(shortGreeting).to.have.string('Welcome, ');
-    });
-
-    it("contains the first initial of the name stored in the 'currentUser' variable", () => {
-      const firstInitial = currentUser[0];
-      const restOfName = currentUser.slice(1);
-
-      expect(shortGreeting).to.have.string(firstInitial);
-      expect(shortGreeting).to.not.have.string(restOfName);
-    });
-
-    it('ends with an exclamation point', () => {
-      expect(shortGreeting.substr(-1)).to.eq('!');
-    });
-  });
+    it('should return "Bye." if anything else', () => {
+      expect(switchOnCharmFromTip('thanks for everything')).to.equal("Bye.")
+    })
+  })
 });
