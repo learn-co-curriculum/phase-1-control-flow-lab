@@ -25,7 +25,7 @@ Number(true);
 // => 1
 ```
 
-That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to `true`. Can you figure out how to properly evaluate whether `5` is greater than `2` **AND** less than `4`? Ponder that as you work through the assignment below.
+That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to `true`. Can you figure out how to properly evaluate whether `5` is greater than `2` **AND** `5` is less than `4`? Ponder that as you work through the assignment below.
 
 ## Instructions
 There are three functions you need to fill in:
