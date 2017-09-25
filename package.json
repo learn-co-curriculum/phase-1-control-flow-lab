@@ -1,25 +1,27 @@
 {
-  "name": "javascript-strings-lab",
+  "name": "js-basics-control-flow-lab",
   "version": "0.2.0",
-  "description": "JavaScript Strings Code-along for Learn.co",
+  "description": "Basics Control Flow Lab for Learn.co",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/learn-co-curriculum/javascript-strings-lab.git"
+    "url": "git+ssh://git@github.com/learn-co-curriculum/js-basics-control-flow-lab.git"
   },
   "keywords": [
     "learn",
     "flatiron school",
     "javascript",
-    "strings",
-    "code-along"
+    "control flow",
+    "if",
+    "else",
+    "lab"
   ],
-  "author": "@gj",
+  "author": "@jk",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/learn-co-curriculum/javascript-strings-lab/issues"
+    "url": "https://github.com/learn-co-curriculum/js-basics-control-flow-lab/issues"
   },
-  "homepage": "https://github.com/learn-co-curriculum/javascript-strings-lab#readme",
+  "homepage": "https://github.com/learn-co-curriculum/js-basics-control-flow-lab#readme",
   "devDependencies": {
     "learn-browser": "^0.1.3"
   }
