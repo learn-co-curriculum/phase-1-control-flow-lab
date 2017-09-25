@@ -14,9 +14,7 @@ You have been hired as a contractor for Scuber — a burgeoning startup that hel
 Scuber's drivers charge their passengers a different amount based on how far they need to travel. Modify the `index.js` file to ensure that Scuber's drivers are properly telling their passengers how much the ride will cost.
 
 ## Read the Tests
-
-We know that you do not have much experience with testing, so that is why it is very important for you to read the instructions in this and following labs.  Still, reading the tests will provide you a lot of guidance to complete the lab.  Let's take a look at the first test together.
-
+We know that you do not have much experience with testing, so that is why it is very important for you to read the instructions in this and following labs.  Still, reading the tests will provide you a lot of guidance to complete the lab.  Let's take a look at the first test together:
 ```js
 describe('index.js', () => {
   describe('first 400 feet are free', () => {
@@ -31,7 +29,7 @@ describe('index.js', () => {
 
 Ok so all of the fancy `describe` words are just there to organize the requirements, and provide a mechanism for what each function should do.  By reading the text inside of the `describe` words, we can see that there is some function that should give customers a free sample, where the first 400 feet are free.  Then in the next line we see a function called `scuberGreetingForFeet` being executed with `199` passed through as an argument to the function.  Executing the `scuberGreetingForFeet` function with the argument returns `"This one is on me!"`.
 
-If we run the tests by running `learn-test` we see that `scuberGreetingForFeet` is not defined.  We can fix this by writing a function `scuberGreetingForFeet` in the index.js file.  The big insight is that the tests in the indexTest.js file are calling the functions that we write the index.js file.  These tests pass arguments to our function.  When this test passes an argument of `199` to our function, the `scuberGreetingForFeet` function should return `"This one is on me!"`.  That makes sense, considering the text in the `describe` and `it` functions say that the first 400 feet should be free.  That `199` must be indicating the distance in feet of the requested ride.  
+If we run the tests by running `learn-test` we see that `scuberGreetingForFeet` is not defined.  We can fix this by writing a function `scuberGreetingForFeet` in the index.js file.  The big insight is that the tests in the indexTest.js file are calling the functions that we write the index.js file.  These tests pass arguments to our function.  When this test passes an argument of `199` to our function, the `scuberGreetingForFeet` function should return `"This one is on me!"`.  That makes sense, considering the text in the `describe` and `it` functions say that the first 400 feet should be free.  That `199` must be indicating the distance in feet of the requested ride.
 
 So reading tests are essentially like reading the instructions.  It's something, we may have avoided for much of our lives, but when it comes to programming, tests fill in the picture of the goal we are trying to accomplish.  They run mini-experiments on our code and help us better understand our code and the problem we are solving.
 
@@ -42,7 +40,6 @@ There are three functions you need to fill in:
 * `switchOnCharmFromTip()` — Use a `switch` statement to return a different response based on the generosity of the passenger's tip.
 
 ***NOTE***: Remember, each time you save the `index.js` file the test suite in your browser will automatically re-run itself and push the results to Learn. When all of the tests are passing at the end of the lab, the `Run Local Tests` light on the Learn.co lesson page will turn green.
-
 
 ***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of 'between' in the following way:
 ```js
@@ -59,3 +56,5 @@ Number(true);
 That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to `true`. Can you figure out how to properly evaluate whether `5` is greater than `2` **AND** `5` is less than `4`? Ponder that as you work through the assignment below.
 
 Good luck!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-flow-control'>Control Flow Lab</a> on Learn.co and start learning to code for free.</p>
