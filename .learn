@@ -2,9 +2,12 @@ tags:
   - learn.co
   - flatiron school
   - javascript
-  - strings
-  - code-along
+  - control
+  - flow
+  - if
+  - else
+  - lab
 languages:
   - javascript
 resources:
-  - 9
+  - 0
