@@ -9,29 +9,29 @@ In this code-along, we will practice working with control flow in JavaScript.
 3. Practice writing `switch` statements.
 
 ## Introduction
-You have been hired as a contractor for Scuber — a burgeoning startup that helps busy parents transport their children to and from all of their activities on scooters.
+You have been hired as a contractor for Scuber, a burgeoning startup that helps busy parents transport their children to and from all of their activities on scooters.
 
-Scuber's drivers charge their passengers a different amount based on how far they need to travel. Modify the `index.js` file to ensure that Scuber's drivers are properly telling their passengers how much the ride will cost.
+Scuber's drivers charge their passengers a variable amount based on how far they need to travel. Modify the `index.js` file to ensure that Scuber's drivers are properly telling their passengers how much the ride will cost.
 
 ## Read the Tests
-We know that you do not have much experience with testing, so that is why it is very important for you to read the instructions in this and following labs.  Still, reading the tests will provide you a lot of guidance to complete the lab.  Let's take a look at the first test together:
+We know that you do not have much experience with testing, so that is why it is very important for you to read the instructions in this and every lab. That being said, reading the tests can often provide supplemental guidance on how to complete a lab. Let's take a look at the first test for this lab together:
 ```js
-describe('index.js', () => {
-  describe('first 400 feet are free', () => {
-    it('gives customers a free sample', () => {
-      expect(scuberGreetingForFeet(199)).to.equal("This one is on me!");
-    })
-    // tests continue...
-  })
-})
+describe('index.js', function () {
+  describe('scuberGreetingForFeet()', function () {
+    it('gives customers a free sample if the ride is less than or equal to 400 feet', function () {
+      expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
+    });
 
+    // tests continue...
+  });
+});
 ```
 
-Ok so all of the fancy `describe` words are just there to organize the requirements, and provide a mechanism for what each function should do.  By reading the text inside of the `describe` words, we can see that there is some function that should give customers a free sample, where the first 400 feet are free.  Then in the next line we see a function called `scuberGreetingForFeet` being executed with `199` passed through as an argument to the function.  Executing the `scuberGreetingForFeet` function with the argument returns `"This one is on me!"`.
+Ok so all of the fancy `describe` words are just there to organize the requirements, and provide a mechanism for what each function should do. By reading the text inside of the `describe` words, we can see that there is some function that should give customers a free sample, where the first 400 feet are free. Then in the next line we see a function called `scuberGreetingForFeet` being executed with `199` passed through as an argument to the function. Executing the `scuberGreetingForFeet` function with the argument should return `"This one is on me!"`.
 
-If we run the tests by running `learn-test` we see that `scuberGreetingForFeet` is not defined.  We can fix this by writing a function `scuberGreetingForFeet` in the index.js file.  The big insight is that the tests in the indexTest.js file are calling the functions that we write the index.js file.  These tests pass arguments to our function.  When this test passes an argument of `199` to our function, the `scuberGreetingForFeet` function should return `"This one is on me!"`.  That makes sense, considering the text in the `describe` and `it` functions say that the first 400 feet should be free.  That `199` must be indicating the distance in feet of the requested ride.
+If we run the tests with the `learn` command, we see that `scuberGreetingForFeet` is not defined. We can fix this by writing a function `scuberGreetingForFeet` in the index.js file. The big insight is that the tests in the indexTest.js file are calling the functions that we write the index.js file. These tests pass arguments to our function. When this test passes an argument of `199` to our function, the `scuberGreetingForFeet` function should return `"This one is on me!"`. That makes sense, considering the text in the `describe` and `it` functions say that the first 400 feet should be free. That `199` must be indicating the distance in feet of the requested ride.
 
-So reading tests are essentially like reading the instructions.  It's something, we may have avoided for much of our lives, but when it comes to programming, tests fill in the picture of the goal we are trying to accomplish.  They run mini-experiments on our code and help us better understand our code and the problem we are solving.
+So reading tests are essentially like reading the instructions. It's something, we may have avoided for much of our lives, but when it comes to programming, tests fill in the picture of the goal we are trying to accomplish. They run mini-experiments on our code and help us better understand our code and the problem we are solving.
 
 ## Instructions
 There are three functions you need to fill in:
