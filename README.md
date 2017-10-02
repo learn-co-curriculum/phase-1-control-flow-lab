@@ -16,14 +16,15 @@ Scuber's drivers charge their passengers a different amount based on how far the
 ## Read the Tests
 We know that you do not have much experience with testing, so that is why it is very important for you to read the instructions in this and following labs. Still, reading the tests will provide you a lot of guidance to complete the lab. Let's take a look at the first test together:
 ```js
-describe('index.js', () => {
-  describe('first 400 feet are free', () => {
-    it('gives customers a free sample', () => {
-      expect(scuberGreetingForFeet(199)).to.equal("This one is on me!");
-    })
+describe('index.js', function () {
+  describe('scuberGreetingForFeet()', function () {
+    it('gives customers a free sample if the ride is less than or equal to 400 feet', function () {
+      expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
+    });
+
     // tests continue...
-  })
-})
+  });
+});
 ```
 
 Ok so all of the fancy `describe` words are just there to organize the requirements, and provide a mechanism for what each function should do. By reading the text inside of the `describe` words, we can see that there is some function that should give customers a free sample, where the first 400 feet are free. Then in the next line we see a function called `scuberGreetingForFeet` being executed with `199` passed through as an argument to the function. Executing the `scuberGreetingForFeet` function with the argument returns `"This one is on me!"`.
