@@ -6,7 +6,7 @@ describe('index.js', function () {
       expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
     });
 
-    it('charges 25 dollars for a distance over 2000 feet', function () {
+    it('charges 30 dollars for a distance over 2000 feet', function () {
       expect(scuberGreetingForFeet(2001)).to.equal('I will gladly take your thirty bucks.');
     });
 
@@ -30,7 +30,7 @@ describe('index.js', function () {
       expect(switchOnCharmFromTip('generous')).to.equal('Thank you so much.');
     });
 
-    it('should return "Thank you." if the tip is not so generous', function () {
+    it('should return "Thank you." if the tip is not as generous', function () {
       expect(switchOnCharmFromTip('not as generous')).to.equal('Thank you.');
     });
 
