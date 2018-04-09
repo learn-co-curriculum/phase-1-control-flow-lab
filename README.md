@@ -35,7 +35,6 @@ describe('index.js', function () {
 });
 ```
 
-
 Okay, so all of the fancy `describe` words are just there to organize the
 requirements, and provide a mechanism for what each function should do. By
 reading the text inside of the `describe` words, we can see that there is some
