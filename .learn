@@ -4,6 +4,7 @@ tags:
   - if
   - else
   - lab
+  - functions
 languages:
   - javascript
 resources:
