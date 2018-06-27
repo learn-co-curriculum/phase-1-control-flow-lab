@@ -105,7 +105,7 @@ mini-experiments on our code and help us better understand our code and the
 problem we are solving.
 
 ## Instructions
-There are three functions you need to declare and fill in:
+There are three functions have been declared for you. You will need to fill in the following code:
 * `scuberGreetingForFeet()` — Use `if` and `else if` statements to return the
 correct greeting based on the distance the passenger desires to travel.
 * `ternaryCheckCity()` — Use a ternary operator to return the correct response
