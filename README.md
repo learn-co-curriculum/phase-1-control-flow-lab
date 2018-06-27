@@ -1,6 +1,6 @@
 # Control Flow Lab
 
-## Overview
+## Problem Statement
 In this code-along, we will practice working with control flow in JavaScript.
 
 ## Objectives
@@ -14,13 +14,13 @@ busy parents transport their children to and from all of their activities on
 scooters.
 
 Scuber's drivers charge their passengers a variable amount based on how far
-they need to travel. Modify the `index.js` file to ensure that Scuber's drivers
+they need to travel. Modify the `index.js` file to make sure that Scuber's drivers
 are properly telling their passengers how much the ride will cost.
 
 ## Read the Tests
 We know that you do not have much experience with testing, so that is why it is
 very important for you to read the instructions in this and every lab. That
-being said, reading the tests can often provide supplemental guidance on how to
+being said, reading the tests can often provide important clues on how to
 complete a lab. Let's take a look at the first test for this lab together:
 
 ```js
@@ -36,7 +36,7 @@ describe('index.js', function () {
 ```
 
 Okay, so all of the fancy `describe` words are just there to organize the
-requirements, and provide a mechanism for what each function should do. By
+requirements, and provide a description for what each function should do. By
 reading the text inside of the `describe` words, we can see that there is some
 function that should give customers a free sample, where the first 400 feet are
 free. Then in the next line we see a function called `scuberGreetingForFeet`
@@ -89,7 +89,7 @@ function scuberGreetingForFeet(someValue) {
 }
 ```
 
-The big insight from reading the example test above is that the tests in the
+The big clue from reading the example test above is that the tests in the
 `indexTest.js` file are calling the functions that we write inside the
 `index.js` file. These tests pass arguments to our function. When this test
 passes an argument of `199` to our function, the `scuberGreetingForFeet`
