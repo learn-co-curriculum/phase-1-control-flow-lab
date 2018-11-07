@@ -115,7 +115,7 @@ response based on the generosity of the passenger's tip.
 
 ***NOTE***: Remember, each time you save the `index.js` file the test suite in
 your browser will automatically re-run itself and push the results to Learn.
-When all of the tests are passing at the end of the lab, the `Run Local Tests`
+When all of the tests are passing at the end of the lab, the "Run Local Tests"
 light on the Learn.co lesson page will turn green.
 
 ***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of
