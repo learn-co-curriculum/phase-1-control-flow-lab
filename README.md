@@ -44,18 +44,13 @@ being executed with `199` passed through as an argument to the function.
 Executing the `scuberGreetingForFeet` function with the argument should return
 `"This one is on me!"`.
 
-If we run the tests with the `learn` command, we see that
-`scuberGreetingForFeet` is not defined. We can fix this by writing a function
-`scuberGreetingForFeet` in the `index.js` file.
-
-...but wait! We haven't gone over writing functions yet!  We will tackle the
-details of function writing in depth in an upcoming lab. For now, briefly, a
-function declaration is written like so:
+We will tackle the details of function writing in depth in an upcoming lab. For 
+now, briefly, a function declaration is written like so:
 
 ```js
 function addFive(someNumber) {
   //everything I want my function to do I put inside these curly braces
-  //in this example, lets say I want my function, addFive, to add 5 to any number I pass in (someNumber), but only IF the number is greater than zero
+  //in this example, let's say I want my function, addFive, to add 5 to any number I pass in (someNumber), but only IF the number is greater than zero
   let result
   if (someNumber > 0) {
     result = someNumber + 5;
@@ -65,7 +60,6 @@ function addFive(someNumber) {
 }
 
 //once our function is declared, we can call addFive, passing in values as arguments
-//in the example test early, scuberGreetingForFeet(199) calls the function with 199 as the argument
 
 addFive(10);
 //returns 15
@@ -98,25 +92,20 @@ the text in the `describe` and `it` functions say that the first 400 feet
 should be free. That `199` must be indicating the distance in feet of the
 requested ride.
 
-So reading tests are essentially like reading the instructions. It's something
+So reading tests is essentially like reading the instructions. It's something
 we may have avoided for much of our lives, but when it comes to programming,
 tests fill in the picture of the goal we are trying to accomplish. They run
 mini-experiments on our code and help us better understand our code and the
 problem we are solving.
 
 ## Instructions
-There are three functions have been declared for you. You will need to fill in the following code:
+There are three functions that have been declared for you. You will need to fill in the following code:
 * `scuberGreetingForFeet()` — Use `if` and `else if` statements to return the
 correct greeting based on the distance the passenger desires to travel.
 * `ternaryCheckCity()` — Use a ternary operator to return the correct response
 based on the desired destination of the passenger.
 * `switchOnCharmFromTip()` — Use a `switch` statement to return a different
 response based on the generosity of the passenger's tip.
-
-***NOTE***: Remember, each time you save the `index.js` file the test suite in
-your browser will automatically re-run itself and push the results to Learn.
-When all of the tests are passing at the end of the lab, the "Run Local Tests"
-light on the Learn.co lesson page will turn green.
 
 ***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of
 'between' in the following way:
@@ -141,8 +130,8 @@ Number(true);
 
 That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to
 `true`. Can you figure out how to properly evaluate whether `5` is greater than
-`2` **AND** `5` is less than `4` using logic operators? Ponder that as you work
-through the assignment,.
+`2` **AND** `5` is less than `4` using logical operators? Ponder that as you work
+through the assignment.
 
 Good luck!
 
