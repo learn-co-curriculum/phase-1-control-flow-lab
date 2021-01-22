@@ -116,7 +116,7 @@ based on the desired destination of the passenger.
 * `switchOnCharmFromTip()` &mdash; Use a `switch` statement to return a different
 response based on the generosity of the passenger's tip.
 
-> **NOTE**: Beware a gotcha! In JavaScript, you cannot express the concept of
+***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of
 'between' in the following way:
 
 ```js
