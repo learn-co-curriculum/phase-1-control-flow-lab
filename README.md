@@ -1,14 +1,10 @@
 # Control Flow Lab
 
-## Problem Statement
+## Learning Goals
 
-In this code-along, we will practice working with control flow in JavaScript.
-
-## Objectives
-
-1. Practice writing `if...else if...else` statements.
-2. Practice working with the ternary operator.
-3. Practice writing `switch` statements.
+* Practice writing `if...else if...else` statements.
+* Practice working with the ternary operator.
+* Practice writing `switch` statements.
 
 ## Introduction
 
@@ -53,8 +49,10 @@ now, briefly, a function declaration is written like so:
 
 ```js
 function addFive(someNumber) {
-  //everything I want my function to do I put inside these curly braces
-  //in this example, let's say I want my function, addFive, to add 5 to any number I pass in (someNumber), but only IF the number is greater than zero
+  //Everything I want my function to do I put inside these curly braces
+  //In this example, let's say I want my function, addFive, to add 5 to
+  //any number I pass in (someNumber), but only IF the number is greater
+  //than zero:
   let result
   if (someNumber > 0) {
     result = someNumber + 5;
@@ -63,16 +61,21 @@ function addFive(someNumber) {
   return result
 }
 
-//once our function is declared, we can call addFive, passing in values as arguments
+//once our function is declared, we can call addFive, passing in values 
+//as arguments:
 
 addFive(10);
-//returns 15
+//=> 15
+
 addFive(20);
-//returns 25
+//=> 25
+
 addFive(-5);
-//returns undefined
+//=> undefined
+
 addFive(addFive(5));
-//returns 15!! In this case, the return value of addFive(5), 10, is passed in as the argument to the outer addFive, returning 15
+//=> 15!! In this case, the return value of addFive(5), 10, is passed in 
+//as the argument to the outer addFive, returning 15
 ```
 
 So, looking back at our test example, `scuberGreetingForFeet(199)` is calling
@@ -105,14 +108,15 @@ problem we are solving.
 ## Instructions
 
 There are three functions that have been declared for you. You will need to fill in the following code:
-* `scuberGreetingForFeet()` — Use `if` and `else if` statements to return the
+
+* `scuberGreetingForFeet()` &mdash; Use `if` and `else if` statements to return the
 correct greeting based on the distance the passenger desires to travel.
-* `ternaryCheckCity()` — Use a ternary operator to return the correct response
+* `ternaryCheckCity()` &mdash; Use a ternary operator to return the correct response
 based on the desired destination of the passenger.
-* `switchOnCharmFromTip()` — Use a `switch` statement to return a different
+* `switchOnCharmFromTip()` &mdash; Use a `switch` statement to return a different
 response based on the generosity of the passenger's tip.
 
-***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of
+> **NOTE**: Beware a gotcha! In JavaScript, you cannot express the concept of
 'between' in the following way:
 
 ```js
@@ -120,8 +124,8 @@ response based on the generosity of the passenger's tip.
 // => true
 ```
 
-It seems like that expression should evaluate to `false` because `5` is not
-less than `4`. However, we're forgetting about the order of operations — let's
+It seems like that expression should evaluate to `false` because `5` is not less
+than `4`. However, we're forgetting about the order of operations &mdash; let's
 think about how the JavaScript engine evaluates that expression. First, the
 engine compares `2 < 5`, which evaluates to `true`. At that point, it's as
 though the value `true` has replaced `2 < 5` in the expression, resulting in
