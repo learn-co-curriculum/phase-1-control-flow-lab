@@ -109,11 +109,11 @@ problem we are solving.
 
 There are three functions that have been declared for you. You will need to fill in the following code:
 
-* `scuberGreetingForFeet()` &mdash; Use `if` and `else if` statements to return the
+* `scuberGreetingForFeet()` — Use `if` and `else if` statements to return the
 correct greeting based on the distance the passenger desires to travel.
-* `ternaryCheckCity()` &mdash; Use a ternary operator to return the correct response
+* `ternaryCheckCity()` — Use a ternary operator to return the correct response
 based on the desired destination of the passenger.
-* `switchOnCharmFromTip()` &mdash; Use a `switch` statement to return a different
+* `switchOnCharmFromTip()` — Use a `switch` statement to return a different
 response based on the generosity of the passenger's tip.
 
 ***NOTE***: Beware a gotcha! In JavaScript, you cannot express the concept of
@@ -125,7 +125,7 @@ response based on the generosity of the passenger's tip.
 ```
 
 It seems like that expression should evaluate to `false` because `5` is not less
-than `4`. However, we're forgetting about the order of operations &mdash; let's
+than `4`. However, we're forgetting about the order of operations — let's
 think about how the JavaScript engine evaluates that expression. First, the
 engine compares `2 < 5`, which evaluates to `true`. At that point, it's as
 though the value `true` has replaced `2 < 5` in the expression, resulting in
