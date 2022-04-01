@@ -1,14 +1,13 @@
-# Control Flow Lab
+# Review: Control Flow Lab
 
-## Problem Statement
-In this code-along, we will practice working with control flow in JavaScript.
+## Learning Goals
 
-## Objectives
-1. Practice writing `if...else if...else` statements.
-2. Practice working with the ternary operator.
-3. Practice writing `switch` statements.
+* Practice writing `if...else if...else` statements.
+* Practice working with the ternary operator.
+* Practice writing `switch` statements.
 
 ## Introduction
+
 You have been hired as a contractor for Scuber, a burgeoning startup that helps
 busy parents transport their children to and from all of their activities on
 scooters.
@@ -18,6 +17,7 @@ they need to travel. Modify the `index.js` file to make sure that Scuber's drive
 are properly telling their passengers how much the ride will cost.
 
 ## Read the Tests
+
 We know that you do not have much experience with testing, so that is why it is
 very important for you to read the instructions in this and every lab. That
 being said, reading the tests can often provide important clues on how to
@@ -62,13 +62,17 @@ function addFive(someNumber) {
 //once our function is declared, we can call addFive, passing in values as arguments
 
 addFive(10);
-//returns 15
+//=> 15
+
 addFive(20);
-//returns 25
+//=> 25
+
 addFive(-5);
-//returns undefined
+//=> undefined
+
 addFive(addFive(5));
-//returns 15!! In this case, the return value of addFive(5), 10, is passed in as the argument to the outer addFive, returning 15
+//=> 15!! In this case, the return value of addFive(5), 10, is passed in 
+//as the argument to the outer addFive, returning 15
 ```
 
 So, looking back at our test example, `scuberGreetingForFeet(199)` is calling
@@ -115,8 +119,8 @@ response based on the generosity of the passenger's tip.
 // => true
 ```
 
-It seems like that expression should evaluate to `false` because `5` is not
-less than `4`. However, we're forgetting about the order of operations — let's
+It seems like that expression should evaluate to `false` because `5` is not less
+than `4`. However, we're forgetting about the order of operations — let's
 think about how the JavaScript engine evaluates that expression. First, the
 engine compares `2 < 5`, which evaluates to `true`. At that point, it's as
 though the value `true` has replaced `2 < 5` in the expression, resulting in
@@ -134,5 +138,3 @@ That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to
 through the assignment.
 
 Good luck!
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/js-basics-flow-control'>Control Flow Lab</a> on Learn.co and start learning to code for free.</p>
