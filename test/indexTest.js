@@ -4,6 +4,10 @@ describe('index.js', function () {
       expect(scuberGreetingForFeet(199)).to.equal('This one is on me!');
     });
 
+    it('charges 20 dollars for a distance between 400 and 2000 feet', function () {
+      expect(scuberGreetingForFeet(1500)).to.equal('That will be twenty bucks.');
+    });
+
     it('charges 30 dollars for a distance over 2000 feet', function () {
       expect(scuberGreetingForFeet(2001)).to.equal('I will gladly take your thirty bucks.');
     });
