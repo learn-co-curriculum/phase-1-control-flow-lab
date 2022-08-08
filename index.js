@@ -6,13 +6,19 @@ function scuberGreetingForFeet(value){
     return "That will be twenty bucks.";
   } if(value > 2000 && value < 2500 ) {
     return "I will gladly take your thirty bucks."
+  } if(value > 2500){
+    return "No can do."
   }
   
 }
 
-function ternaryCheckCity(){
+function ternaryCheckCity(city){
   // Write your code here!
-  hello
+ if(city === "NYC"){
+  return "Ok, sounds good."
+ } else {
+  return "No go."
+ }
 }
 
 function switchOnCharmFromTip(){
