@@ -1,0 +1,234 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 0,
+    "pending": 0,
+    "failures": 9,
+    "start": "2022-12-13T02:13:33.411Z",
+    "end": "2022-12-13T02:13:33.889Z",
+    "duration": 478
+  },
+  "tests": [
+    {
+      "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'This one is on me!'",
+        "showDiff": true,
+        "expected": "This one is on me!",
+        "stack": "AssertionError: expected undefined to equal 'This one is on me!'\n    at Context.<anonymous> (test/indexTest.js:6:45)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'That will be twenty bucks.'",
+        "showDiff": true,
+        "expected": "That will be twenty bucks.",
+        "stack": "AssertionError: expected undefined to equal 'That will be twenty bucks.'\n    at Context.<anonymous> (test/indexTest.js:10:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
+        "showDiff": true,
+        "expected": "I will gladly take your thirty bucks.",
+        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:14:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'No can do.'",
+        "showDiff": true,
+        "expected": "No can do.",
+        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:18:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "returns \"Ok, sounds good.\" when the city is NYC",
+      "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Ok, sounds good.'",
+        "showDiff": true,
+        "expected": "Ok, sounds good.",
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:24:42)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"No go.\" if the destination city is not NYC",
+      "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'No go.'",
+        "showDiff": true,
+        "expected": "No go.",
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:28:49)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Thank you so much.\" if the tip is generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Thank you so much.'",
+        "showDiff": true,
+        "expected": "Thank you so much.",
+        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:34:51)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Thank you.\" if the tip is not as generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Thank you.'",
+        "showDiff": true,
+        "expected": "Thank you.",
+        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:38:58)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Bye.\" if anything else",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Bye.'",
+        "showDiff": true,
+        "expected": "Bye.",
+        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:42:64)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'This one is on me!'",
+        "showDiff": true,
+        "expected": "This one is on me!",
+        "stack": "AssertionError: expected undefined to equal 'This one is on me!'\n    at Context.<anonymous> (test/indexTest.js:6:45)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'That will be twenty bucks.'",
+        "showDiff": true,
+        "expected": "That will be twenty bucks.",
+        "stack": "AssertionError: expected undefined to equal 'That will be twenty bucks.'\n    at Context.<anonymous> (test/indexTest.js:10:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'I will gladly take your thirty bucks.'",
+        "showDiff": true,
+        "expected": "I will gladly take your thirty bucks.",
+        "stack": "AssertionError: expected undefined to equal 'I will gladly take your thirty bucks.'\n    at Context.<anonymous> (test/indexTest.js:14:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'No can do.'",
+        "showDiff": true,
+        "expected": "No can do.",
+        "stack": "AssertionError: expected undefined to equal 'No can do.'\n    at Context.<anonymous> (test/indexTest.js:18:46)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "returns \"Ok, sounds good.\" when the city is NYC",
+      "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Ok, sounds good.'",
+        "showDiff": true,
+        "expected": "Ok, sounds good.",
+        "stack": "AssertionError: expected undefined to equal 'Ok, sounds good.'\n    at Context.<anonymous> (test/indexTest.js:24:42)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"No go.\" if the destination city is not NYC",
+      "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'No go.'",
+        "showDiff": true,
+        "expected": "No go.",
+        "stack": "AssertionError: expected undefined to equal 'No go.'\n    at Context.<anonymous> (test/indexTest.js:28:49)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Thank you so much.\" if the tip is generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Thank you so much.'",
+        "showDiff": true,
+        "expected": "Thank you so much.",
+        "stack": "AssertionError: expected undefined to equal 'Thank you so much.'\n    at Context.<anonymous> (test/indexTest.js:34:51)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Thank you.\" if the tip is not as generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Thank you.'",
+        "showDiff": true,
+        "expected": "Thank you.",
+        "stack": "AssertionError: expected undefined to equal 'Thank you.'\n    at Context.<anonymous> (test/indexTest.js:38:58)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    },
+    {
+      "title": "should return \"Bye.\" if anything else",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Bye.'",
+        "showDiff": true,
+        "expected": "Bye.",
+        "stack": "AssertionError: expected undefined to equal 'Bye.'\n    at Context.<anonymous> (test/indexTest.js:42:64)\n    at process.processImmediate (node:internal/timers:471:21)"
+      }
+    }
+  ],
+  "passes": []
+}
