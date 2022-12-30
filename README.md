@@ -16,6 +16,16 @@ Scuber's drivers charge their passengers a variable amount based on how far
 they need to travel. Modify the `index.js` file to make sure that Scuber's drivers
 are properly telling their passengers how much the ride will cost.
 
+## Getting Started
+
+If you haven't already, fork and clone this lab into your local environment.
+Remember to **fork** a copy into your GitHub account first, then **clone** from
+that copy. Navigate into its directory in the terminal, then run code . to open
+the files in Visual Studio Code.
+
+Next, run `npm install` to install the dependencies then run the test suite with
+the `npm test` command.
+
 ## Read the Tests
 
 We know that you do not have much experience with testing, so that is why it is
@@ -141,5 +151,13 @@ That leaves us with `1 < 4`, which the JavaScript engine correctly evaluates to
 `true`. Can you figure out how to properly evaluate whether `5` is greater than
 `2` **AND** `5` is less than `4` using logical operators? Ponder that as you work
 through the assignment.
+
+After you have all the tests passing, remember to commit and push your changes
+up to GitHub, then submit your work to Canvas using CodeGrade. If you need a
+reminder, go back to the [Completing and Submitting Assignments with
+CodeGrade][completing-codegrade] lesson to review the process.
+
+[completing-codegrade]: https://github.com/learn-co-curriculum/phase-1-completing-assignments-with-codegrade
+
 
 Good luck!
