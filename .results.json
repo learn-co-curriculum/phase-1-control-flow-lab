@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 9,
+    "passes": 6,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-02-17T18:48:54.485Z",
+    "end": "2023-02-17T18:48:55.139Z",
+    "duration": 654
+  },
+  "tests": [
+    {
+      "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns \"Ok, sounds good.\" when the city is NYC",
+      "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"No go.\" if the destination city is not NYC",
+      "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"Thank you so much.\" if the tip is generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    },
+    {
+      "title": "should return \"Thank you.\" if the tip is not as generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    },
+    {
+      "title": "should return \"Bye.\" if anything else",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "should return \"Thank you so much.\" if the tip is generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you so much.\" if the tip is generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    },
+    {
+      "title": "should return \"Thank you.\" if the tip is not as generous",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Thank you.\" if the tip is not as generous",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    },
+    {
+      "title": "should return \"Bye.\" if anything else",
+      "fullTitle": "index.js switchOnCharmFromTip() should return \"Bye.\" if anything else",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: switchOnCharmFromTip is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "switchOnCharmFromTip is not defined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "gives customers a free sample if the ride is less than or equal to 400 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() gives customers a free sample if the ride is less than or equal to 400 feet",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 20 dollars for a distance between 400 and 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 20 dollars for a distance between 400 and 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "charges 30 dollars for a distance over 2000 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() charges 30 dollars for a distance over 2000 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not allow rides over 2500 feet",
+      "fullTitle": "index.js scuberGreetingForFeet() does not allow rides over 2500 feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns \"Ok, sounds good.\" when the city is NYC",
+      "fullTitle": "index.js ternaryCheckCity() returns \"Ok, sounds good.\" when the city is NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return \"No go.\" if the destination city is not NYC",
+      "fullTitle": "index.js ternaryCheckCity() should return \"No go.\" if the destination city is not NYC",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
