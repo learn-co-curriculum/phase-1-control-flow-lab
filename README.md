@@ -1,12 +1,12 @@
 
-# (Speed Detector)
+# (Nest Salary calculator)
 
 #### Date, 2024/03/24
 
 #### By *Charles Mumo*
 
 ## Description
-It's a  program that takes as input the speed of a car.
+It's a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits.
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
