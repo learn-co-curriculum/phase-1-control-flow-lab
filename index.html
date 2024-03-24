@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demerit Points Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  hello
+    <h1 id="ccm">Demerit Points Calculator</h1>
+    <p id="kmw">Enter the speed of the vehicle</p>
+    <input type="number" id="speedInput">
+    <button onclick="calculateDemeritPoints()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateDemeritPoints() {
+            const speedLimit = 70;
+            const speedInput = document.getElementById("speedInput").value;
+            const speed = parseFloat(speedInput);
+            let demeritPoints = 0;
+
+            if (speed <= speedLimit) {
+                document.getElementById("result").innerText = "Ok";
+            } else {
+                demeritPoints = Math.floor((speed - speedLimit) / 5);
+                document.getElementById("result").innerText = "Points: " + demeritPoints;
+            }
+
+            if (demeritPoints > 12) {
+                document.getElementById("result").innerText = "License suspended";
+            }
+        }
+    </script>
 </body>
 </html>
