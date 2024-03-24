@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="ttg">Net Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  hello
+<body">
+    <h1 id="ccm">Net salary calculator</h1>
+    <label for="basicSalary">Basic Salary:</label>
+    <input type="number" id="basicSalary"><br>
+    <label for="benefits">Benefits:</label>
+    <input type="number" id="benefits"><br>
+    <button onclick="calculateNetSalary()" id="bs">Calculate the net salary</button><br>
+    <p id="result"></p>
+
+    <script>
+        function calculateNetSalary() {
+            const basicSalary = parseFloat(document.getElementById("basicSalary").value);
+            const benefits = parseFloat(document.getElementById("benefits").value);
+
+            // KRA Tax Rates
+            const taxRates = [
+                { min: 0, max: 24000, rate: 10 },
+                { min: 24001, max: 32333, rate: 15 },
+                { min: 32334, max: 40333, rate: 20 },
+                { min: 40334, max: 48333, rate: 25 },
+                { min: 48334, max: Infinity, rate: 30 }
+            ];
+
+            // NHIF Deductions
+            const nhifDeductions = 0;
+
+            // NSSF Deductions
+            const nssfDeductions = Math.min((basicSalary + benefits) * 0.06, 200);
+
+            // Calculate Gross Salary
+            const grossSalary = basicSalary + benefits;
+
+            // Calculate Tax (PAYE)
+            let taxableIncome = grossSalary - nhifDeductions - nssfDeductions;
+            let tax = 0;
+            for (const rate of taxRates) {
+                if (taxableIncome > rate.max) {
+                    tax += (rate.max - rate.min + 1) * rate.rate / 100;
+                } else {
+                    tax += (taxableIncome - rate.min + 1) * rate.rate / 100;
+                    break;
+                }
+            }
+
+            // Calculate Net Salary
+            const netSalary = grossSalary - tax - nhifDeductions - nssfDeductions;
+
+            // Display the result
+            const resultText = `
+                Gross Salary: ${grossSalary.toFixed(2)}<br>
+                Tax (PAYE): ${tax.toFixed(2)}<br>
+                NHIF Deductions: ${nhifDeductions.toFixed(2)}<br>
+                NSSF Deductions: ${nssfDeductions.toFixed(2)}<br>
+                Net Salary: ${netSalary.toFixed(2)}
+            `;
+            document.getElementById("result").innerHTML = resultText;
+        }
+    </script>
 </body>
 </html>
