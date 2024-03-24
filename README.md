@@ -1,11 +1,11 @@
-# (Student Grade Generator)
+# (Speed Detector )
 
 #### Date, 2024/03/24
 
 #### By *Charles Mumo*
 
 ## Description
-It's a program that prompts the user to input student marks. 
+It's a  program that takes as input the speed of a car.
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
