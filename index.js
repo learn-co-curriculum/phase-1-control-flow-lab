@@ -11,11 +11,7 @@ function scuberGreetingForFeet(distance) {
 }
 
 function ternaryCheckCity(destination) {
-  if (destination !== "NYC") {
-    return "No go.";
-  } else {
-    return "Ok, sounds good.";
-  }
+  return destination !== "NYC" ? "No go." : "Ok, sounds good.";
 }
 
 function switchOnCharmFromTip() {
